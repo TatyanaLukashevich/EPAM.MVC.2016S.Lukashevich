@@ -1,0 +1,16 @@
+D:\labaMVC\day1\AdditionalContollers\bin\Debug\AdditionalContollers.dll
+D:\labaMVC\day1\AdditionalContollers\bin\Debug\AdditionalContollers.pdb
+D:\labaMVC\day1\AdditionalContollers\bin\Debug\System.Web.Mvc.dll
+D:\labaMVC\day1\AdditionalContollers\bin\Debug\System.Web.Razor.dll
+D:\labaMVC\day1\AdditionalContollers\bin\Debug\System.Web.WebPages.Razor.dll
+D:\labaMVC\day1\AdditionalContollers\bin\Debug\System.Web.WebPages.dll
+D:\labaMVC\day1\AdditionalContollers\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\labaMVC\day1\AdditionalContollers\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\labaMVC\day1\AdditionalContollers\bin\Debug\System.Web.Mvc.xml
+D:\labaMVC\day1\AdditionalContollers\bin\Debug\System.Web.Razor.xml
+D:\labaMVC\day1\AdditionalContollers\bin\Debug\System.Web.WebPages.Razor.xml
+D:\labaMVC\day1\AdditionalContollers\bin\Debug\System.Web.WebPages.xml
+D:\labaMVC\day1\AdditionalContollers\bin\Debug\Microsoft.Web.Infrastructure.xml
+D:\labaMVC\day1\AdditionalContollers\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\labaMVC\day1\AdditionalContollers\obj\Debug\AdditionalContollers.dll
+D:\labaMVC\day1\AdditionalContollers\obj\Debug\AdditionalContollers.pdb
