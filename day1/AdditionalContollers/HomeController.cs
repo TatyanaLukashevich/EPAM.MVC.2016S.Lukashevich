@@ -4,6 +4,7 @@ namespace AdditionalContollers
 {
     public class HomeController : Controller 
     {
+        [HttpGet]
         public ActionResult Index()
         {
             string data = "hello from additional controller";
