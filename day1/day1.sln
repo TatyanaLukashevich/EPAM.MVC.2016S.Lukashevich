@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "day1", "day1\day1.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdditionalContollers", "AdditionalContollers\AdditionalContollers.csproj", "{8A7B26CF-8CFD-43FA-A4EA-3EFB4F6EAB6A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestRouting", "TestRouting\TestRouting.csproj", "{2C0D9CDC-4991-4ED1-9C58-3C89831E34FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8A7B26CF-8CFD-43FA-A4EA-3EFB4F6EAB6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A7B26CF-8CFD-43FA-A4EA-3EFB4F6EAB6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A7B26CF-8CFD-43FA-A4EA-3EFB4F6EAB6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C0D9CDC-4991-4ED1-9C58-3C89831E34FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C0D9CDC-4991-4ED1-9C58-3C89831E34FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C0D9CDC-4991-4ED1-9C58-3C89831E34FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C0D9CDC-4991-4ED1-9C58-3C89831E34FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
