@@ -69,3 +69,17 @@ D:\labaMVC\day1\day1\obj\Debug\day1.pdb
 D:\labaMVC\day1\day1\bin\AdditionalContollers.dll
 D:\labaMVC\day1\day1\bin\AdditionalContollers.pdb
 D:\labaMVC\day1\day1\obj\Debug\day1.csprojResolveAssemblyReference.cache
+D:\labaMVC\day1\day1\bin\Castle.Core.dll
+D:\labaMVC\day1\day1\bin\Castle.Core.xml
+D:\labaMVC\day1\day1\bin\Machine.Specifications.Clr4.dll
+D:\labaMVC\day1\day1\bin\Machine.Specifications.dll
+D:\labaMVC\day1\day1\bin\Machine.Specifications.Should.dll
+D:\labaMVC\day1\day1\bin\Machine.Specifications.VSRunner.dll
+D:\labaMVC\day1\day1\bin\Machine.TestAdapter.dll
+D:\labaMVC\day1\day1\bin\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+D:\labaMVC\day1\day1\bin\Mono.Cecil.dll
+D:\labaMVC\day1\day1\bin\Mono.Cecil.Mdb.dll
+D:\labaMVC\day1\day1\bin\Mono.Cecil.Pdb.dll
+D:\labaMVC\day1\day1\bin\Mono.Cecil.Rocks.dll
+D:\labaMVC\day1\day1\bin\Machine.Specifications.VSRunner.pdb
+D:\labaMVC\day1\day1\bin\Machine.TestAdapter.pdb
