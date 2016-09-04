@@ -20,10 +20,10 @@ namespace TestRouting
 
         Because of = () =>
         {
-            result = routes.GetRouteData(Helper.CreateHttpContext("~/home/index/12"));
+            result = routes.GetRouteData(Helper.CreateHttpContext("~/home/index/13"));
         };
 
-        //It route_should_match = () => Helper.TestIncomingRouteResult(result, controller, action).ShouldBeTrue();
+        It route_should_match = () => Helper.TestIncomingRouteResult(result, controller, action).ShouldBeTrue();
     }
 
     [Subject("Route is failed")]

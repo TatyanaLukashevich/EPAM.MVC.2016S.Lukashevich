@@ -15,21 +15,17 @@ namespace day1
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute("SpecificRoute", "{controller}/{action}/{id}/{*catchall}",
-             new { controller = "Home", action = "Index", id = UrlParameter.Optional },
-             constraints: new { id = @"\d{2}", myConstraint = new UserAgentConstraint("/home/index/12") },
-             namespaces: new[] { "day1.Controllers" });
-
-            //routes.MapRoute("MyRoute", "{controller}/{action}/{id}/{*catchall}",
-            //   new
-            //   {
-            //       controller = "Home",
-            //       action = "Index",
-            //       id = UrlParameter.Optional,
-            //       httpMethod = new HttpMethodConstraint("GET")
-            //   },
-
-            //new[] { "AdditionalContollers" });
-
+             new
+             { controller = "Home",
+                 action = "Index",
+                 id = UrlParameter.Optional,
+                 httpMethod = new HttpMethodConstraint("GET")
+             },
+             constraints: new
+             {
+                 id = @"\d{2}",
+                 myConstraint = new UserAgentConstraint("/home/index/12") },
+                 namespaces: new[] { "day1.Controllers" });
 
             //routes.MapRoute("", "Public/{controller}/{action}",
             //    new

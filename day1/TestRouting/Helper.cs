@@ -15,14 +15,14 @@ namespace TestRouting
        public static HttpContextBase CreateHttpContext(string targetUrl = null, string httpMethod = "GET")
         {
             Mock<HttpRequestBase> mockRequest = new Mock<HttpRequestBase>();
-            mockRequest.Setup(m => m.AppRelativeCurrentExecutionFilePath)
-                .Returns(targetUrl);
+            mockRequest.Setup(m => m.AppRelativeCurrentExecutionFilePath).Returns(targetUrl);
             mockRequest.Setup(m => m.HttpMethod).Returns(httpMethod);
+            mockRequest.Setup(req => req.Url).Returns(new Uri(new Uri("http://localhost/"), targetUrl));
 
             Mock<HttpResponseBase> mockResponse = new Mock<HttpResponseBase>();
             mockResponse.Setup(m => m.ApplyAppPathModifier(
                 Moq.It.IsAny<string>())).Returns<string>(s => s);
-
+    
             Mock<HttpContextBase> mockContext = new Mock<HttpContextBase>();
             mockContext.Setup(m => m.Request).Returns(mockRequest.Object);
             mockContext.Setup(m => m.Response).Returns(mockResponse.Object);
