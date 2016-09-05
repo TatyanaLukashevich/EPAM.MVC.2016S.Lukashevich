@@ -39,19 +39,9 @@ namespace TestRouting
         };
 
         Because of = () =>
-            result = routes.GetRouteData(Helper.CreateHttpContext("~/home/index/1"));
+            result = routes.GetRouteData(Helper.CreateHttpContext("~/home/index"));
 
         It route_should_be_failed = () =>
             (result?.Route == null).ShouldBeTrue();
-        //private void TestRouteFail(string url)
-        //{
-        //    // Arrange
-        //    RouteCollection routes = new RouteCollection();
-        //    RouteConfig.RegisterRoutes(routes);
-        //    // Act - process the route
-        //    RouteData result = routes.GetRouteData(Helper.CreateHttpContext(url));
-        //    // Assert
-        //    Assert.IsTrue(result == null || result.Route == null);
-        //}
     }
 }
