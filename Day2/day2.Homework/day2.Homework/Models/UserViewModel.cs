@@ -11,9 +11,20 @@ namespace day2.Homework.Models
         public string Name { get; set; }
         public string LastName { get; set; }
 
+        public int Id
+        {
+            get
+            {
+                return id;
+            }
+            private set
+            {
+                id = value;
+            }
+        }
         public UserViewModel()
         {
-            id++;
+            Id++;
         }
     }
 }

@@ -30,5 +30,11 @@ namespace day2.Homework.Models
             Thread.Sleep(2000);
             return UserCollection;
         }
+
+        public static void Delete(UserViewModel user)
+        {
+            Thread.Sleep(2000);
+            UserCollection.Remove(user);
+        }
     }
 }
