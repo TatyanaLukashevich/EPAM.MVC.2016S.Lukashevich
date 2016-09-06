@@ -11,28 +11,31 @@ namespace day2.Homework
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
-            //Вызов метода MapMvcAttributeRoutes() заставляет систему маршрутизации проинспектировать классы контроллеров в приложении в поисках атрибутов, конфигурирующих маршруты. 
-            //routes.MapMvcAttributeRoutes();
-
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-          //  routes.MapRoute(
-          //     name: "UserControllerRoute",
-          //     url: "{User}/{action}/{id}",
-          //     defaults: new { controller = "UserCustomerController", action = "Index", id = UrlParameter.Optional }
-          // );
+            routes.MapRoute(
+                   name: "CustomerAdd",
+                   url: "Customer/{action}/{id}",
+                   defaults: new { controller = "User", action = "Add-User", id = UrlParameter.Optional }
+               );
 
-          //  routes.MapRoute(
-          //    name: "CustomerControllerRoute",
-          //    url: "{Customer}/{action}/{id}",
-          //    defaults: new { controller = "UserCustomerController", action = "Index", id = UrlParameter.Optional }
-          //);
+            routes.MapRoute(
+                name: "UserAdd",
+                url: "User/{action}/{id}",
+                defaults: new { controller = "User", action = "Add-User", id = UrlParameter.Optional }
+            );
 
-            //routes.MapRoute(
-            //   name: "Error",
-            //   url: "{*url}",
-            //   defaults: new { controller = "Errors", action = "NotFound" }  // 404s
-            //);
+            routes.MapRoute(
+                  name: "CustomerGetAll",
+                  url: "Customer/{action}/{id}",
+                  defaults: new { controller = "User", action = "User-List", id = UrlParameter.Optional }
+              );
+
+            routes.MapRoute(
+                name: "UserGetAll",
+                url: "User/{action}/{id}",
+                defaults: new { controller = "User", action = "User-List", id = UrlParameter.Optional }
+            );
 
             routes.MapRoute(
                 name: "Default",

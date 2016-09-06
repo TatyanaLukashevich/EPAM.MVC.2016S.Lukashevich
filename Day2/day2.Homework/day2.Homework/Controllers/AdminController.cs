@@ -11,10 +11,10 @@ namespace day2.Homework.Controllers
     public class AdminController : Controller
     {
         [Local]
-        public ActionResult DeleteUser(int id = 0)
+        public ActionResult Delete()
         {
-            UserRepository.Delete(UserRepository.UserCollection.FirstOrDefault(u => u.Id == id));
-            return RedirectToAction("User-List");
+            UserRepository.Delete();
+            return View();
         }
     }
 }
