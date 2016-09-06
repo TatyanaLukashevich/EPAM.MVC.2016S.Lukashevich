@@ -11,6 +11,9 @@ namespace day2.Homework
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+            //Вызов метода MapMvcAttributeRoutes() заставляет систему маршрутизации проинспектировать классы контроллеров в приложении в поисках атрибутов, конфигурирующих маршруты. 
+            routes.MapMvcAttributeRoutes();
+
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(

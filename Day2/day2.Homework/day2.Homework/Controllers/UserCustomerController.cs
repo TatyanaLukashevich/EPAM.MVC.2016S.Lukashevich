@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace day2.Homework.Controllers
 {
-    public class UserController : Controller
+    public class UserCustomerController : Controller
     {
         [HttpPost]
         [ActionName("Add-User")]
