@@ -37,6 +37,14 @@ namespace day3.Homework.Controllers
         public ActionResult ChangeSide(Person person)
         {
             person = PersonRepository.persons.LastOrDefault();
+            if(person.Type == TypePerson.Dark)
+            {
+                return PartialView("_DarkSide");
+            }
+            else
+            {
+                person.Type = TypePerson.Dark;
+            }
             return View("PersonInfo", person);
         }
 
