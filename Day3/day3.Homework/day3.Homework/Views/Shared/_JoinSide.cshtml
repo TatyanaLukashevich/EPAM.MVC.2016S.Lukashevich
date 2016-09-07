@@ -1,7 +1,15 @@
-﻿@using (Html.BeginForm("ChangeSide", "Home", FormMethod.Post))
-{
-    <button class="btn btn-default">Join other side?</button>
-    <script>
+﻿@using day3.Homework.Models
+@model Person
 
-    </script>
+
+
+@using (Html.BeginForm("ChangeSide", "Home"))
+{
+    <button class="btn btn-default" type="submit" onclick="changeSide()">Join other side</button>
+
 }
+<script>
+        function changeSide() {
+            $("body").css('background', 'black');
+        }
+</script>

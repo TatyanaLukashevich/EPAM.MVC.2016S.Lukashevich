@@ -36,11 +36,14 @@ namespace day3.Homework.Controllers
         [HttpPost]
         public ActionResult ChangeSide(Person person)
         {
-            if(person.Type == TypePerson.Dark)
-            {
-                return PartialView("Dark");
-            }
+            person = PersonRepository.persons.LastOrDefault();
             return View("PersonInfo", person);
+        }
+
+        [HttpGet]
+        public ActionResult ChangeSide()
+        {
+            return View("PersonInfo");
         }
 
         [HttpGet]
