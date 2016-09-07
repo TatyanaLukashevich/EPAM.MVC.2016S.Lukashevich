@@ -1,0 +1,14 @@
+﻿@using day3.Homework.Models
+@model IEnumerable<Person>
+
+@{
+    ViewBag.Title = "GetDark";
+}
+
+<h2>On the dark side:</h2>
+
+@foreach(var item in Model)
+{
+    <h2>@item.Name</h2>
+}
+

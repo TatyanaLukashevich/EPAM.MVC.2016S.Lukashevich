@@ -42,5 +42,19 @@ namespace day3.Homework.Controllers
             }
             return View("PersonInfo", person);
         }
+
+        [HttpGet]
+        public ActionResult GetDark()
+        {
+            var model = PersonRepository.persons;
+            return View(model.Where(p => p.Type == TypePerson.Dark));
+        }
+
+        [HttpGet]
+        public ActionResult GetLight()
+        {
+            var model = PersonRepository.persons;
+            return View(model.Where(p => p.Type == TypePerson.Light));
+        }
     }
 }

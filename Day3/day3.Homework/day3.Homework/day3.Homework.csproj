@@ -121,7 +121,6 @@
     <Content Include="Views\Home\_Header.cshtml" />
     <Content Include="Views\Home\GetAll.cshtml" />
     <Content Include="Views\Home\PersonInfo.cshtml" />
-    <Content Include="Views\Home\Dark.cshtml" />
     <Content Include="Views\Shared\_JoinSide.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -145,6 +144,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Home\GetDark.cshtml" />
+    <Content Include="Views\Home\GetLight.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

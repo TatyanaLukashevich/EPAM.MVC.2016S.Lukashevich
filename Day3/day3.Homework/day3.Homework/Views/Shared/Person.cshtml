@@ -8,20 +8,20 @@
 {
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true)
-    <div class="badge" style="margin-left:560px; color:steelblue">
+    <div  style="margin-left:auto; color:steelblue">
         <fieldset>
-            <legend style="color:steelblue">Register</legend>
             <div class="editor-label">
                 @Html.Label("Name")
             </div>
             <div class="editor-field">
                 @Html.EditorFor(model => model.Name)
             </div>
-           
+           <p></p>
             <div class="editor-field">
                 @Html.DropDownListFor(model => model.Type,
            new SelectList(Enum.GetNames(typeof(TypePerson))), string.Empty)
             </div>
+            <p></p>
             <p>
                 <input type="submit" value="Send" />
             </p>
