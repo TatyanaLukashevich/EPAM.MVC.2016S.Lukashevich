@@ -1,0 +1,11 @@
+﻿@using day3.Homework.Models
+@model Person
+@{
+    ViewBag.Title = "PersonInfo";
+}
+@Html.Partial("_Header")
+<h2>Name:</h2>@Model.Name;
+<h2>Side:</h2>@Model.Type;
+
+
+@Html.Partial("_JoinSide")
