@@ -1,4 +1,5 @@
 ﻿@using day3.Homework.Models
+
 @model Person
 @{
     ViewBag.Title = "PersonInfo";
@@ -7,5 +8,19 @@
 <h2>Name:</h2>@Model.Name;
 <h2>Side:</h2>@Model.Type;
 
+@if (Model.Type == TypePerson.Dark)
+{
+    @section scripts
+{
+        <script type="text/javascript">
+        (function ($) {
+            $(".container").css('background', 'black');
+        })(jQuery);
+
+        </script>
+    }
+}
+
 
 @Html.Partial("_JoinSide")
+
