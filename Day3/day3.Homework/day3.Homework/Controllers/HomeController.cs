@@ -39,7 +39,7 @@ namespace day3.Homework.Controllers
             person = PersonRepository.persons.LastOrDefault();
             if(person.Type == TypePerson.Dark)
             {
-                return PartialView("_DarkSide");
+                return View("PersonInfo", person);
             }
             else
             {

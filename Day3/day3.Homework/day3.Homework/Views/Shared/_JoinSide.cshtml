@@ -5,11 +5,23 @@
 
 @using (Html.BeginForm("ChangeSide", "Home"))
 {
-    <script>
+    if (Model.Type == TypePerson.Light)
+    {
+        <script>
             function changeSide() {
                 $("body").css('background', 'black');
             }
-    </script>
+        </script>
+    }
+
+    else
+    {
+        <script>
+            function changeSide() {
+                alert("Lol. There is no way out!");
+            }
+        </script>
+    }
     <button class="btn btn-default" type="submit" onclick="changeSide()">Join other side</button>
 
 }
