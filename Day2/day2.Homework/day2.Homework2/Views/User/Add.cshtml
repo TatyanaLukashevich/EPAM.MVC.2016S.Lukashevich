@@ -1,0 +1,36 @@
+﻿@using day2.Homework.Models
+@model UserViewModel
+
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Add</h2>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    <div style="margin-left:auto; color:steelblue">
+        <fieldset>
+            <div class="editor-label">
+                @Html.Label("Name")
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Name)
+            </div>
+            <p></p>
+            <div class="editor-label">
+                @Html.Label("Lastname")
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.LastName)
+            </div>
+            <p></p>
+            <p>
+                <input type="submit" value="Send" />
+            </p>
+        </fieldset>
+        <p></p>
+    </div>
+
+}

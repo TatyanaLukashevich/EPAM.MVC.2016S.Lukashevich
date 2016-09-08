@@ -1,0 +1,12 @@
+﻿@using day2.Homework2.Models
+@model IEnumerable<UserViewModel>
+@{
+    ViewBag.Title = "UserList";
+}
+
+<h2>UserList</h2>
+
+@foreach(var item in Model)
+{
+    <h2>@item.Name</h2>
+}
