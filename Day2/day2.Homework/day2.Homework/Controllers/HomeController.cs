@@ -9,7 +9,7 @@ using System.Web.SessionState;
 namespace day2.Homework.Controllers
 {
     [SessionState(SessionStateBehavior.Disabled)]
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         // GET: Home
         public ActionResult Index()

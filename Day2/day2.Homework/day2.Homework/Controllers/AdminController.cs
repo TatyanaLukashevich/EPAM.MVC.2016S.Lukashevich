@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace day2.Homework.Controllers
 {
-    public class AdminController : Controller
+    public class AdminController : BaseController
     {
         [Local]
         public ActionResult Delete()
