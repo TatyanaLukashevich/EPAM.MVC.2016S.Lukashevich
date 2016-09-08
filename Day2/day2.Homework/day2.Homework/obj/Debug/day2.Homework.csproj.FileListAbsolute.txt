@@ -30,4 +30,3 @@ D:\labaMVC\Day2\day2.Homework\day2.Homework\bin\System.Web.Helpers.xml
 D:\labaMVC\Day2\day2.Homework\day2.Homework\bin\System.Web.Mvc.xml
 D:\labaMVC\Day2\day2.Homework\day2.Homework\obj\Debug\day2.Homework.dll
 D:\labaMVC\Day2\day2.Homework\day2.Homework\obj\Debug\day2.Homework.pdb
-D:\labaMVC\Day2\day2.Homework\day2.Homework\obj\Debug\day2.Homework.csprojResolveAssemblyReference.cache

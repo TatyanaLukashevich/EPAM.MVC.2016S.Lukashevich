@@ -22,8 +22,9 @@ namespace day2.Homework.Controllers
         public async Task<ActionResult> Add(UserViewModel user)
         {
             var users = await UserRepository.Add(user);
-            return View("User-List", users);
+            return View("UserList", users);
         }
+
 
         [ActionName("User-List")]
         [HttpGet]
