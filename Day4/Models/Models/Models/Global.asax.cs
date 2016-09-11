@@ -12,9 +12,7 @@ namespace Models
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
 
-            ValueProviderFactories.Factories.Insert(0, new CustomValueProviderFactory());
-
-            ModelBinders.Binders.Add(typeof(Address), new CustomModelBinder());
+            ModelBinders.Binders.Add(typeof(Person), new PersonModelBinder());
         }
     }
 }

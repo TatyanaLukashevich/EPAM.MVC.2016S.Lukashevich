@@ -54,3 +54,32 @@ D:\Google chrome\Models\Models\Models\bin\System.Web.Helpers.xml
 D:\Google chrome\Models\Models\Models\bin\System.Web.Mvc.xml
 D:\Google chrome\Models\Models\Models\obj\Debug\Models.dll
 D:\Google chrome\Models\Models\Models\obj\Debug\Models.pdb
+D:\labaMVC\Day4\Models\Models\Models\bin\Models.dll.config
+D:\labaMVC\Day4\Models\Models\Models\bin\Models.dll
+D:\labaMVC\Day4\Models\Models\Models\bin\Models.pdb
+D:\labaMVC\Day4\Models\Models\Models\bin\Microsoft.Web.Infrastructure.dll
+D:\labaMVC\Day4\Models\Models\Models\bin\Ninject.dll
+D:\labaMVC\Day4\Models\Models\Models\bin\Ninject.Web.Common.dll
+D:\labaMVC\Day4\Models\Models\Models\bin\Ninject.Web.Mvc.dll
+D:\labaMVC\Day4\Models\Models\Models\bin\System.Web.Helpers.dll
+D:\labaMVC\Day4\Models\Models\Models\bin\System.Web.Mvc.dll
+D:\labaMVC\Day4\Models\Models\Models\bin\System.Web.Razor.dll
+D:\labaMVC\Day4\Models\Models\Models\bin\System.Web.Webpages.Deployment.dll
+D:\labaMVC\Day4\Models\Models\Models\bin\System.Web.Webpages.dll
+D:\labaMVC\Day4\Models\Models\Models\bin\System.Web.Webpages.Razor.dll
+D:\labaMVC\Day4\Models\Models\Models\bin\WebActivator.dll
+D:\labaMVC\Day4\Models\Models\Models\bin\Ninject.pdb
+D:\labaMVC\Day4\Models\Models\Models\bin\Ninject.xml
+D:\labaMVC\Day4\Models\Models\Models\bin\Ninject.Web.Common.pdb
+D:\labaMVC\Day4\Models\Models\Models\bin\Ninject.Web.Common.xml
+D:\labaMVC\Day4\Models\Models\Models\bin\Ninject.Web.Mvc.pdb
+D:\labaMVC\Day4\Models\Models\Models\bin\Ninject.Web.Mvc.xml
+D:\labaMVC\Day4\Models\Models\Models\bin\System.Web.Razor.xml
+D:\labaMVC\Day4\Models\Models\Models\bin\System.Web.Webpages.xml
+D:\labaMVC\Day4\Models\Models\Models\bin\System.Web.Webpages.Deployment.xml
+D:\labaMVC\Day4\Models\Models\Models\bin\System.Web.Webpages.Razor.xml
+D:\labaMVC\Day4\Models\Models\Models\bin\System.Web.Helpers.xml
+D:\labaMVC\Day4\Models\Models\Models\bin\System.Web.Mvc.xml
+D:\labaMVC\Day4\Models\Models\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+D:\labaMVC\Day4\Models\Models\Models\obj\Debug\Models.dll
+D:\labaMVC\Day4\Models\Models\Models\obj\Debug\Models.pdb

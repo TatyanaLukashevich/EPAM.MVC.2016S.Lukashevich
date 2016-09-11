@@ -17,41 +17,48 @@ namespace Models.Controllers
 		    _repo = personRepo;
 	    }
 
-        public ActionResult Index(int id = 1)
+        public ActionResult Index()
         {
-	        var person = _repo.GetAll().First(p => p.PersonId == id);
-			return View(person);
+			return View();
         }
-
-        public ActionResult CreatePerson()
-        {
-            return View(new Person());
-        }
-
 
         [HttpPost]
-        public ActionResult CreatePerson(Person model)
+        public ActionResult Index(FormCollection formData)
         {
-            return View("Index", model);
+            Person person = new Person();
+            TryUpdateModel(person, formData);
+            return View(person);
         }
 
-        public ActionResult DisplaySummary(
-            [Bind(Prefix = "HomeAddress")] Address summary)
-        {
-            return View(summary);
-        }
+        //public ActionResult CreatePerson()
+        //{
+        //    return View(new Person());
+        //}
 
-        public ActionResult Names(string[] names)
-        {
-            names = names ?? new string[0];
-            return View(names);
-        }
 
-        public ActionResult Addresses()
-        {
-            IList<Address> addresses = new List<Address>();
-            UpdateModel(addresses);
-            return View(addresses);
-        }
+        //[HttpPost]
+        //public ActionResult CreatePerson(Person model)
+        //{
+        //    return View("Index", model);
+        //}
+
+        //public ActionResult DisplaySummary(
+        //    [Bind(Prefix = "HomeAddress")] Address summary)
+        //{
+        //    return View(summary);
+        //}
+
+        //public ActionResult Names(string[] names)
+        //{
+        //    names = names ?? new string[0];
+        //    return View(names);
+        //}
+
+        //public ActionResult Addresses()
+        //{
+        //    IList<Address> addresses = new List<Address>();
+        //    UpdateModel(addresses);
+        //    return View(addresses);
+        //}
     }
 }
