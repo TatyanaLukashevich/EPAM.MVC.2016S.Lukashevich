@@ -23,10 +23,9 @@ namespace Models.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index(FormCollection formData)
+        public ActionResult Index(Person person)
         {
-            Person person = new Person();
-            TryUpdateModel(person, formData);
+            TryUpdateModel(person);
             return View(person);
         }
 

@@ -14,7 +14,6 @@ namespace Models.Infrastructure
             personModel.LastName = GetValue(bindingContext, "LastName");
             personModel.BirthDate = GetDoB(controllerContext, bindingContext);
             personModel.HomeAddress = GetAdrress(controllerContext, bindingContext);
-            personModel.HomeAddress.Summary = GetAddressSummary(GetAdrress(controllerContext, bindingContext));
             personModel.Role = GetRole(controllerContext, bindingContext);
             return personModel;
         }
@@ -48,6 +47,15 @@ namespace Models.Infrastructure
             address.PostalCode = GetValue(bindingContext, "HomeAddress.PostalCode").Length < 6 ? "<not-defined>" 
                 : GetValue(bindingContext, "HomeAddress.PostalCode");
 
+            if (address.PostalCode == "<not-defined>" || address.City == "<not-defined>" || address.Line1 == "<not-defined>")
+            {
+                address.Summary = "No Personal Address";
+            }
+            else
+            {
+                address.Summary = $"{address.PostalCode} {address.City},{address.Line1}";
+            }
+
             return address;
         }
 
@@ -75,14 +83,6 @@ namespace Models.Infrastructure
             DateTime.TryParseExact(GetValue(bindingContext, "BirthDate"), "yyyy,dd-MM",
                 CultureInfo.InvariantCulture, DateTimeStyles.None, out birthdate);
             return birthdate;
-        }
-
-        private string GetAddressSummary(Address address)
-        {
-            if (address.PostalCode == "<Not Specified>" || address.City == "<Not Specified>" ||
-                address.Line1 == "<Not Specified>")
-                return "No Personal Address";
-            return $"{address.PostalCode} {address.City},{address.Line1}";
         }
     }
 }
