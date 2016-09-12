@@ -17,17 +17,40 @@ namespace Models.Controllers
 		    _repo = personRepo;
 	    }
 
+        [HttpGet]
         public ActionResult Index()
         {
-			return View();
+            return View();
         }
 
         [HttpPost]
         public ActionResult Index(Person person)
         {
-            TryUpdateModel(person);
-            return View(person);
+            if (TryUpdateModel(person))
+            {
+                return View(person);
+            }
+
+            return View();
         }
+
+        //[HttpPost]
+        //[ActionName("Index")]
+        //public ActionResult IndexFromQuery(Person person)
+        //{
+        //    if (TryUpdateModel(person, new QueryStringValueProvider(ControllerContext)))
+        //    {
+        //        return View("Index", person);
+        //    }
+
+        //    return View("Index");
+        //}
+
+
+
+
+
+
 
         //public ActionResult CreatePerson()
         //{
