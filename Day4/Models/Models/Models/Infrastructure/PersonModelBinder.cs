@@ -22,7 +22,6 @@ namespace Models.Infrastructure
         {
             name = (context.ModelName == "" ? ""
                 : context.ModelName + ".") + name;
-
             ValueProviderResult result = context.ValueProvider.GetValue(name);
 
             if (result == null || result.AttemptedValue == "")
